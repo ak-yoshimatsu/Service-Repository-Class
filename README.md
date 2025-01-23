@@ -93,7 +93,7 @@ use App\Models\Order;
 
 class OrderService
 {
-    protected $productRepository;
+    private $productRepository;
 
     public function __construct(ProductRepository $productRepository)
     {
@@ -134,7 +134,7 @@ use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
-    protected $orderService;
+    private $orderService;
 
     public function __construct(OrderService $orderService)
     {
